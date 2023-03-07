@@ -173,10 +173,10 @@ int pintos_init(void)
     }
     printf("monitor exited\n");
     free(buf);
-    /* Finish up. */
-    shutdown();
-    thread_exit();
   }
+  /* Finish up. */
+  shutdown();
+  thread_exit();
 }
 /** Clear the "BSS", a segment that should be initialized to
    zeros.  It isn't actually stored on disk or zeroed by the
